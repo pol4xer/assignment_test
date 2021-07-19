@@ -1,3 +1,4 @@
+import os
 from dataclasses import asdict
 
 import yaml
@@ -29,4 +30,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # For local testing
+    os.environ['TEMPLATE_PATH'] = "template.yml"
     main()
