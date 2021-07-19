@@ -1,0 +1,41 @@
+output_info:
+  - type: csv
+    path: ./results/
+    name: result_csv
+
+files_info:
+  - bank_name: bank1
+    files_path:
+      - "./data/bank1.csv"
+
+    date_field: timestamp
+    date_format: "%b %d %Y"
+    type_field: type
+    amount_field: amount
+    from_field: from
+    to_field: to
+
+
+  - bank_name: bank2
+    files_path:
+      - "./data/bank2.csv"
+
+    date_field: date
+    date_format: "%d-%m-%Y"
+    type_field: transaction
+    amount_field: amounts
+    from_field: from
+    to_field: to
+
+
+  - bank_name: bank3
+    files_path:
+      - "./data/bank3.csv"
+
+    date_field: date_readable
+    date_format: "%d %b %Y"
+    type_field: type
+    amount_field: euro
+    amount_fraction_field: cents
+    from_field: from
+    to_field: to

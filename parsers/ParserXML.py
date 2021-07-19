@@ -1,0 +1,2 @@
+class ParserXML:
+    pass
